@@ -23,8 +23,8 @@ def somme():
     somme_resultat = sum(int(v) for v in valeurs)
     
     return f"<h2>La somme des valeurs saisies est : {somme_resultat}</h2>"
-@app.route('/impair/<int:val_user>/<int:val_user2>')
-def somme(val_user,val_user2):
+# @app.route('/impair/<int:val_user>/<int:val_user2>')
+def impair(val_user,val_user2):
 
   somme = val_user + val_user2
   if somme % 2 == 0 :

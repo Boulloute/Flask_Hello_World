@@ -16,6 +16,15 @@ def exercices():
     return render_template('exercices.html')
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
-    return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)                                                                                                               
+    return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
+@app.route('/pairimpair/<n1>/<n2>')
+def impair_pair(val_user):
+  n1 = input(val_user)
+  n2 = input(val_user)
+  somme = n1 + n2
+  if somme %2 = 0 :
+    print("pair")
+  else: 
+    print("impair")
 if __name__ == "__main__":
   app.run(debug=True)

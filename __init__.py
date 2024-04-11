@@ -17,7 +17,7 @@ def exercices():
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
-@app.route('/pairimpair/<n1>/<n2>')
+@app.route('/pairimpair/<int :n1>/<int: n2>')
 def impair_pair(val_user):
   n1 = input(val_user)
   n2 = input(val_user)

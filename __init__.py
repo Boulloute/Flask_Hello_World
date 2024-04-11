@@ -18,11 +18,11 @@ def exercices():
 def carre(val_user):
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
 @app.route('/pairimpair/<int :n1>/<int: n2>')
-def impair_pair(val_user):
+def impair_pair(somme):
   n1 = input(val_user)
   n2 = input(val_user)
   somme = n1 + n2
-  if somme %2 = 0 :
+  if somme % 2 = 0 :
     print("pair")
   else: 
     print("impair")

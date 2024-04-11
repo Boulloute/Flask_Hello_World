@@ -14,8 +14,16 @@ def hello_world():
 @app.route('/exercices/')
 def exercices():
     return render_template('exercices.html')
-
-@app.route('/somme/<int:val_user>/<int:val_user2>')
+@app.route('/somme')
+def somme():
+    # Obtenez les valeurs de la requête GET sous forme de liste
+    valeurs = request.args.getlist('valeur')
+    
+    # Convertissez les valeurs de chaînes en entiers et calculez la somme
+    somme_resultat = sum(int(v) for v in valeurs)
+    
+    return f"<h2>La somme des valeurs saisies est : {somme_resultat}</h2>"
+@app.route('/impair/<int:val_user>/<int:val_user2>')
 def somme(val_user,val_user2):
 
   somme = val_user + val_user2

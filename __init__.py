@@ -19,7 +19,7 @@ def exercices():
 def somme(n1 + n2):
   input(val_user)
   input(val_user2)
-  somme = n1 + n2
+  somme = val_user + val_user2
   if somme % 2 == 0 :
     return "pair"
   else: 

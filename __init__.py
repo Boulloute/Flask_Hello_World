@@ -19,9 +19,10 @@ def carre(val_user):
     return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
 @app.route('/somme/<int:val_user>/<int:val_user>')
 def somme(val_user + val_user):
-  input(val_user)
+  n1 = input(val_user)
+  n2 = input(val_user)
   somme = val_user + val_user
-  if somme % 2 = 0 :
+  if somme % 2 == 0 :
     return "pair"
   else: 
     return "impair"

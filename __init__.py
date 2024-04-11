@@ -16,9 +16,8 @@ def exercices():
     return render_template('exercices.html')
 
 @app.route('/somme/<int:val_user>/<int:val_user2>')
-def somme(val_user + val_user2):
-  input(val_user)
-  input(val_user2)
+def somme(val_user,val_user2):
+
   somme = val_user + val_user2
   if somme % 2 == 0 :
     return "pair"
